@@ -10,7 +10,9 @@ defmodule Chainex.Mixfile do
      test_coverage: [tool: ExCoveralls],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     deps: deps(),
+     docs: [main: "README",
+            extras: ["README.md"]]]
   end
 
   # Configuration for the OTP application.
@@ -36,6 +38,7 @@ defmodule Chainex.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:benchfella, "~> 0.3.0", only: [:test]},
-     {:excoveralls, "~> 0.6", only: :test}]
+     {:excoveralls, "~> 0.6", only: :test},
+     {:ex_doc, "~> 0.14", only: :dev}]
   end
 end
