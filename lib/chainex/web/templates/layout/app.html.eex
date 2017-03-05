@@ -7,16 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Chainex - A Blockchain written in Elixir</title>
+    <title>Chainex - A toy blockchain written in Elixir</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container">
-        <h1 class="logo">Chainex</h1>
-        <p>A toy Elixir blockchain</p>
+        <img class="artwork" src="<%= static_path(@conn, "/images/artwork.png") %>">
+        <%# <h1 class="logo">Chainex</h1> %>
         <div class="menu">
+            <span>A toy Elixir blockchain</span>
+            <a></a>
             <a href="/explorer">Explorer</a>
+            <span>::</span>
             <a href="/help">Help</a>
         </div>
     </div>

@@ -1,20 +1,22 @@
 # Chainex
 
-A toy blockchain written in Elixir
+A toy blockchain written in Elixir, inspire by [this article](https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54).
 
-To start your Phoenix app:
+![Artwork Image](/priv/static/images/artwork.png?raw=true "Chainex Artwork")
+
+### Quick start
 
   * Install dependencies with `mix deps.get`
   * Start Phoenix endpoint with `mix phoenix.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+### Development
 
-## Learn more
+```shell
+$ make test     # run tests
+$ make cover    # run tests with coverage
+$ make bench    # run benchmarks
+$ make docs     # generate documentation
+```
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Licsense: **MIT**
