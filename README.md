@@ -21,9 +21,9 @@ $ make docs     # generate documentation
 
 ### TODO
 
-[ ] Consensus
-[ ] Merkle tree
-[ ] PoW
+- [ ] Consensus
+- [ ] Merkle tree
+- [ ] PoW
 
 
 License: **MIT**
