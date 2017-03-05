@@ -19,4 +19,4 @@ $ make bench    # run benchmarks
 $ make docs     # generate documentation
 ```
 
-Licsense: **MIT**
+License: **MIT**
