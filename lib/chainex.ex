@@ -10,8 +10,9 @@ defmodule Chainex do
     children = [
       # Start the endpoint when the application starts
       supervisor(Chainex.Web.Endpoint, []),
-      # Start your own worker by calling: Chainex.Worker.start_link(arg1, arg2, arg3)
-      # worker(Chainex.Worker, [arg1, arg2, arg3]),
+
+      # Chain worker
+      worker(Chainex.Chain, [:ok, [name: Chainex.Chain]]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

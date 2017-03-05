@@ -4,7 +4,7 @@ defmodule Chainex.BlockTest do
     alias Chainex.Block
 
     test "create blockchain" do
-        block = Block.new(:index, :hash)
+        block = Block.new(:index, :data, :hash)
         assert block != nil
     end
 end
