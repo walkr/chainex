@@ -19,4 +19,11 @@ $ make bench    # run benchmarks
 $ make docs     # generate documentation
 ```
 
+### TODO
+
+[ ] Consensus
+[ ] Merkle tree
+[ ] PoW
+
+
 License: **MIT**
