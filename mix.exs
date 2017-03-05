@@ -7,6 +7,7 @@ defmodule Chainex.Mixfile do
      elixir: "~> 1.2",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
+     test_coverage: [tool: ExCoveralls],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -33,6 +34,8 @@ defmodule Chainex.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:benchfella, "~> 0.3.0", only: [:test]},
+     {:excoveralls, "~> 0.6", only: :test}]
   end
 end
