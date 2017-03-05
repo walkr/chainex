@@ -1,4 +1,4 @@
-.PHONY: test cover bench
+.PHONY: test cover bench docs
 
 help:
 	@echo
@@ -19,3 +19,6 @@ cover:
 
 bench:
 	@MIX_ENV=test mix bench
+
+docs:
+	@mix docs
