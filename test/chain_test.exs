@@ -25,7 +25,7 @@ defmodule Chainex.ChainTest do
     end
 
     test "store and get latest block" do
-        block = Block.new(:index, :data, :invalid)
+        block = Block.new(1, :data, :invalid)
         :ok = Chain.store_block(block)
         {:ok, latest} = Chain.get_latest_block()
         assert block == latest

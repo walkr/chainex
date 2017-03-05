@@ -24,10 +24,13 @@ defmodule Chainex.Block do
     Generate next block
     """
     def generate(data) do
+        # Fetch previous block
         {:ok, prevBlock} = Chain.get_latest_block()
-        index = prevBlock.index + 1
-        block = new(index, data, prevBlock.hash)
+
+        # Store new block
+        block = new(prevBlock.index + 1, data, prevBlock.hash)
         :ok = Chain.store_block(block)
-        block
+
+        {:ok, block}
     end
 end

@@ -17,3 +17,5 @@ erl_crash.dump
 
 # Other
 .DS_Store
+/cover
+/bench/snapshots
